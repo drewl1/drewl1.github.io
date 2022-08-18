@@ -51,7 +51,7 @@
 .countdownTimer {
    /* font-size: 75px; */
     line-height: 42px;
-    margin: 0.2em;
+ 
     position: fixed;
     /*
     margin-left: auto;
@@ -72,7 +72,7 @@
     font-size: calc(2.5 * (1.5vh + 1.1vw));
     z-index: 10;
     text-align: center;
-
+    left: 0;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
