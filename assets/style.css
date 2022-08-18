@@ -83,7 +83,18 @@
     
 
 
-
+.footer{
+  color: var(--font-color);
+  font-size: 0.8rem;
+  z-index: 1000;
+  text-align: center; 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;   
+  text-align: center;
+  margin-bottom: 9px;
+}
 
 
 
