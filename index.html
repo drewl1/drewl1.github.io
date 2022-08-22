@@ -11,37 +11,37 @@
     </head>
   
     <body>
-      <div class="wrapper">
-        <div class="loader"></div>
-      </div>
-      <h1 class="center">Days until school ends:</h1>
-      <p id="countdown" class="countdownTimer"></p>
+          <div class="wrapper">
+            <div class="loader"></div>
+          </div>
+          <h1 class="center">Days until school ends:</h1>
+          <p id="countdown" class="countdownTimer"></p>
 
-        
-      
-      <script>
-      var countDownDate = new Date("June 5, 2023 14:35:00").getTime();
 
-      var x = setInterval(function() {
 
-      var now = new Date().getTime();
+          <script>
+          var countDownDate = new Date("June 5, 2023 14:35:00").getTime();
 
-      var distance = countDownDate - now;
+          var x = setInterval(function() {
 
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          var now = new Date().getTime();
 
-      document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
+          var distance = countDownDate - now;
 
-      if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("countdown").innerHTML = "EXPIRED";
-      }
-      }, 1000);
-      </script>
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+          if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("countdown").innerHTML = "EXPIRED";
+          }
+          }, 1000);
+          </script>
     </body>
     <footer class="footer">
         <p>version 3.2</p>
