@@ -14,8 +14,11 @@
         <!-- <div class="wrapper"> -->
           <!-- <div class="loader"></div> -->
           <!-- </div> -->
-          <h1 class="center">Days until school ends:</h1>
-          <p id="countdown" class="countdownTimer"></p>
+      <div>
+        <h1 class="center">Days until school ends:</h1>
+        <p id="countdown" class="timer"></p>
+      </div>
+
 
 
 
@@ -42,8 +45,32 @@
           }
           }, 1000);
           </script>
+      <!-- Actual Days Script 
+          <script>
+          var actualCount = new Date("December 19, 2023 14:35:00").getTime();
+
+          var x = setInterval(function() {
+
+          var now = new Date().getTime();
+
+          var distance = actualCount - now;
+
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("actualCountdown").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+          if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("actualCountdown").innerHTML = "EXPIRED";
+          }
+          }, 1000);
+          </script> -->
     </body>
     <footer class="footer">
-        <p>version 2.13</p>
+        <p>version 2.26</p>
     </footer>
 </html>
