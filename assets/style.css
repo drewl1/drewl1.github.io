@@ -28,8 +28,10 @@
     -webkit-box-direction: normal;
             flex-direction: column;
   
-            background: radial-gradient(at 12% 71%, transparent 0%, #e2f5ce 2.852%, #efbfba 65.187%, #d2d7b4 95.698%, #f4d8cd 100%) 88% 82%/143% 109%,            linear-gradient(34deg, rgba(245, 246, 179, 0.46) 0%, #f397af 23.043%, #aff5c8 44.431%, rgba(168, 228, 207, 0.92) 91.478%, transparent 100%),            linear-gradient(236deg, #ceede9 0%, #f9ebc5 100%);
-      background-size: 400% 400%;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);     
+      
+    background-size: 400% 400%;
     color: var(--font-color);
   }
 
