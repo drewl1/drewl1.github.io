@@ -84,19 +84,3 @@
   margin-bottom: 9px;
 }
 
-
-
-.wrapper {
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    background-color: #fff;
-    display: grid;
-    place-items: center;
-    transition: opacity 10s, visibility 10s;
-}
-
-.fade {
-    opacity: 0;
-    visibility: hidden;
-}
