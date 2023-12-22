@@ -19,12 +19,14 @@
     </script>
   </head>
   <body>
+    <p class="enddate" id="endDate"></p>
     <h1 class="center">Time until school ends:</h1>
     <h4 class="center">Including weekends and breaks
     <p id="countdown" class="Countdowntimer"></p>
     <p class="top-right" id="currentDateTime"></p> 
     <script>
         // Countdown Timer Script
+        var endDay = new Date("May 31, 2024")
         var countDownDate = new Date("May 31, 2024 15:34:59").getTime();
       
         var x = setInterval(function() {
@@ -55,9 +57,10 @@
         // unused var numWorkingDays for excluding weekends
         document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
         document.getElementById("currentDateTime").innerHTML = today.toLocaleTimeString() + " | " + today.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+        document.getElementById("endDate").innerHTML = "Last day: " + endDay.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }); 
         if (distance < 0) {
           clearInterval(x);
-          document.getElementById("countdown").innerHTML = "EXPIRED";
+          document.getElementById("countdown").innerHTML = "Its over";
         }
       }, 1000);
 
@@ -76,7 +79,7 @@
     </script>
   </body>
   <footer class="footer">
-    <p>v5</p>
+    <p>v5.1</p>
     <p><a href='https://github.com/drewl1/drewl1.github.io' class='footer'>source code</a></p>
   </footer>
 </html>
