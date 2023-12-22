@@ -42,6 +42,12 @@
       margin: 10px; 
     }
   
+  .enddate { 
+      position: absolute; 
+      top: 10; 
+      right: 0; 
+      margin: 10px; 
+    }
     
   .Countdowntimer {
       font-size: calc(2.5 * (1.5vh + 1.1vw));
